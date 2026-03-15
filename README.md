@@ -22,3 +22,5 @@ Demostrar habilidades en Desarrollo Backend, diseño de Bases de Datos Relaciona
 * `GET /api/tickets` - Obtiene todos los incidentes con sus usuarios relacionados (JOIN).
 * `POST /api/tickets` - Crea un ticket y ejecuta el algoritmo de auto-asignación.
 * `PUT /api/tickets/{id}/cerrar` - Actualiza el estado de un incidente a "Cerrado".
+
+**Live Demo (API Pública):** https://helpdesk-tickets-api-java.onrender.com
