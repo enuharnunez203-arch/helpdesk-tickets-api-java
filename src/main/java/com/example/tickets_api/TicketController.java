@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/tickets") // Nueva URL
+@RequestMapping("/api/tickets") 
 public class TicketController {
 
     @Autowired
@@ -20,7 +20,6 @@ public class TicketController {
 
     @PostMapping
     public Ticket crearTicket(@RequestBody Ticket nuevoTicket) {
-        // Por defecto, cuando se crea un ticket, su estado es "Abierto"
         nuevoTicket.setEstado("Abierto"); 
         return ticketRepository.save(nuevoTicket);
     }
